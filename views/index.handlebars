@@ -2,23 +2,13 @@
 
 <h2>Ordered Burgers:</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless hungry}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+
+
 
 <h2>Eaten Burgers:</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if hungry}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+
+
 
 <h2>Add a Burger!</h2>
 <form class="create-form">
