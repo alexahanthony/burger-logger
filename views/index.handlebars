@@ -1,12 +1,24 @@
 <h1>Burger Logger!</h1>
 
 <h2>Ordered Burgers:</h2>
-
-
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=false}}
+    {{/unless}}
+  {{/each}}
+</ul>
 
 
 <h2>Eaten Burgers:</h2>
 
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/if}}
+  {{/each}}
+</ul>
 
 
 
